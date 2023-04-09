@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import * as Styles from "./index.module.css";
 import { CgProfile } from "react-icons/cg";
+import { useState } from "react";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
@@ -15,13 +16,12 @@ const IndexPage = ({ data }) => {
           <h2>Hi! I'm nasagong.</h2>
           <br />
           test test test
-          <br />I hate JavaScript!
+          <br />I made this blog by JavaScript!
         </div>
       </div>
       <div className={Styles.category}>
         <ul>
-          <li>Javascript</li>
-          <li>Computer Science</li>
+          <li>JavaScript</li>
           <li>Network</li>
         </ul>
       </div>
@@ -49,6 +49,7 @@ export const query = graphql`
           slug
           title
           date
+          category
         }
         id
         excerpt

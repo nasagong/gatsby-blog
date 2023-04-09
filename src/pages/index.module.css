@@ -23,7 +23,7 @@
     background-color: #1c1d23;
     margin:3rem 0 3rem 0;
     padding:0.3rem 0;
-    border:2px solid #232429;
+    border:5px solid #232429;
     border-radius: 7px;
     overflow:hidden;
 }
@@ -35,7 +35,10 @@
     list-style:none;
 }
 .category li{
-    margin-right:2rem;
+    background-color: #3e3f4a;
+    border-radius: 7px;
+    padding: 0.3rem 1rem;
+    margin-right:0rem;
     margin-left:1rem;
 }
 .post-list {
