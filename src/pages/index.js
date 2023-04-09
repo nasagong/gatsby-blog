@@ -2,10 +2,17 @@ import React from "react";
 import Layout from "../components/layout";
 import * as Styles from "./index.module.css";
 import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
+  const [category,setCategory] = useState([]);
+
+  useEffect(() => {
+    const categories = data.allMdx.nodes.map(node => node.frontmatter.category);
+    setCategory(categories);
+  }, [data.allMdx.nodes]);
+
   return (
     <Layout pageTitle="Main Page">
       <div className={Styles.profile}>
@@ -21,13 +28,16 @@ const IndexPage = ({ data }) => {
       </div>
       <div className={Styles.category}>
         <ul>
-          <li>JavaScript</li>
-          <li>Network</li>
+          {
+            category.map((element)=>(
+              <li key={element}>{element}</li>
+            ))
+          }
         </ul>
       </div>
       <div className={Styles.postList}>
         {data.allMdx.nodes.map((node) => (
-          <div className={Styles.post}>
+          <div className={Styles.post} key={node.id}>
             <article key={node.id}>
               <div style={{ fontSize: "1.2rem", margin: "1rem 0" }}>
                 {node.frontmatter.title}
