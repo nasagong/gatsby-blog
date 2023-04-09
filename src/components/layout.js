@@ -7,7 +7,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className={Styles.container}>
       <nav className={Styles.controller}>
         <HiArrowCircleLeft/>
-        <HiOutlineHome/>
+        <HiOutlineHome style={{margin:"0 0.5rem"}}/>
         <HiArrowCircleRight/>
       </nav>
       <h1>{pageTitle}</h1>

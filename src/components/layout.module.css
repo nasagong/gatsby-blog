@@ -14,13 +14,16 @@ body {
   overflow: hidden;
   height:100vh;
 }
+
 .container h1{
   margin: 1rem 0;
   padding: 1rem;
 }
+
 .container hr{
   color:white;
 }
+
 .controller {
   display: flex;
   justify-content: end;

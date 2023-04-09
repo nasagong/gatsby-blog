@@ -1,6 +1,7 @@
 .profile{
     display:flex;
     height:15vh;
+    margin-bottom: 1rem;
     padding:0rem 0;
 }
 .profile .profile-image{
@@ -17,4 +18,34 @@
 .profile h2{
     padding-top:0.5rem;
     margin:0;
+}
+.category{
+    background-color: #1c1d23;
+    margin:3rem 0 3rem 0;
+    padding:0.3rem 0;
+    border:2px solid #232429;
+    border-radius: 7px;
+    overflow:hidden;
+}
+.category ul{
+    padding:0;
+    display: flex;
+    overflow-x:scroll;
+    justify-content: flex-start;
+    list-style:none;
+}
+.category li{
+    margin-right:2rem;
+    margin-left:1rem;
+}
+.post-list {
+    max-width: 500px;
+    margin:auto;
+}
+.post-list .post{
+    border-radius: 7px;
+    height:6rem;
+    background-color: #3e3f4a;
+    padding:0.2rem 2rem 1.2rem 2rem;
+    margin-bottom:1.5rem;
 }
