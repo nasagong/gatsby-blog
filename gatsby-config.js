@@ -8,14 +8,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", 
-    "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: `blog`,
-      path: `${__dirname}/blog`
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
-    __key: "pages"
-  },
   "gatsby-plugin-mdx",
   ]
 };
