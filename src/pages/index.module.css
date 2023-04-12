@@ -1,3 +1,6 @@
+.a{
+    text-decoration: none !important;
+}
 .profile{
     display:flex;
     height:15vh;
@@ -41,6 +44,10 @@
     margin-right:0rem;
     margin-left:1rem;
 }
+.category li:hover{
+    background-color:grey;
+    transition:background-color .5s;
+}
 .post-list {
     max-width: 500px;
     margin:auto;
@@ -51,4 +58,12 @@
     background-color: #3e3f4a;
     padding:0.2rem 2rem 1.2rem 2rem;
     margin-bottom:1.5rem;
+}
+.post-list .post:hover{
+    background-color:grey;
+    transition:background-color .5s;
+}
+.post-list .post a.noUnderline{
+    text-decoration: none !important;
+    text-underline-offset: none;
 }
