@@ -1,3 +1,4 @@
+// node v16
 import React from "react";
 import Layout from "../components/layout";
 import * as Styles from "./index.module.css";
@@ -53,7 +54,7 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-  
+
 export const query = graphql`
   query {
     allMdx {
