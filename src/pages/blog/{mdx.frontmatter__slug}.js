@@ -1,11 +1,18 @@
 import * as React from "react";
 import Layout from "../../components/layout";
 import { graphql } from "gatsby";
+import * as Styles from './Blogpost.module.css';
 
 const BlogPost = ({data,children}) => {
   return(
   <Layout>
-    <h1>{data.mdx.frontmatter.title}</h1>
+    <div className={Styles.postInfo}>
+      <div className={Styles.category}>{data.mdx.frontmatter.category} |</div>
+      <div className={Styles.date}>  {data.mdx.frontmatter.date}</div>
+    </div>
+    <div className={Styles.postTitle}>
+      {data.mdx.frontmatter.title}
+    </div>
     <article>
       {children}
     </article>
@@ -21,6 +28,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        category
       }
       excerpt
     }

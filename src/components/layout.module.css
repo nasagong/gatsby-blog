@@ -15,15 +15,6 @@ body {
   height:100vh;
 }
 
-.container h1{
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-.container hr{
-  color:white;
-}
-
 .controller {
   display: flex;
   justify-content: end;
@@ -33,33 +24,11 @@ body {
   color: white;
   font-size: 2rem;
 }
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  padding-top:1rem;
+header{
+  display:flex;
   padding-bottom:1rem;
-  margin: 0;
-  border-top: 1px solid #30363d;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 2px solid grey;
 }
-
-nav li {
-  margin-left:10px;
-  margin-right:10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-nav a:hover {
-  background-color: #30363d;
-}
-
 main {
   margin: 1rem 0;
 

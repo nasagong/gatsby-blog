@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
       </div>
       <div className={Styles.postList}>
         {data.allMdx.nodes.map((node) => (
-          <Link to={`/blog/${node.frontmatter.slug}`}>
+         <Link to={`/blog/${node.frontmatter.slug}`}>
             <div className={Styles.post} key={node.id}>
               <article key={node.id}>
                 <div style={{ fontSize: "1.2rem", margin: "1rem 0" }}>
@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-
+  
 export const query = graphql`
   query {
     allMdx {
